@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador de Texto</title>
+    <title>Text Decoder</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="../public/stylesheets/reset.css">
+    <!-- CSS -->
+    <link rel="stylesheets" href="../public/stylesheets/home.css">
 </head>
 <body>
+    <main>
+        <figure>
+            <img class="logo" src="../public/images/alura-logo.svg" alt="Alura logo">
+        </figure>
+        <div class="form">
+            <textarea name="textbox" id="textbox" placeholder="Type your text"></textarea>
+
+            <div class="form_sent">
+                <div class="form_alert">
+                    <img src="imgs/exclamation.svg" alt="exclamation mark" width="16px"/>
+                    <label for="textbox">Only lowercase letters and no accents.</label>
+                </div>
+                <div class="form_btns">
+                    <button class="btn dark-submit" onClick="encryptText()" id="encrypt">Encrypt</button>
+                    <button class="btn light-submit" onClick="submitDecrypt()" id="decrypt">Decrypt</button>
+                </div>
+            </div>
+        </div>
+        <div id="result">
+            <img src="imgs/illustration.svg" alt="A person looking at diamond through a magnifying glass">
+            <p class="main_text">No message found</p>
+            <p class="sub_text">Enter text that you want to encrypt or decrypt</p>
+        </div>
+    </main>
     
+    <footer>
+        <p class="p-footer">Made with ❤️ by Jonnata Costa</p> 
+        <a href="https://github.com/Jonnata" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/null/github.png"/></a>
+        <a href="https://www.linkedin.com/in/jonnata-costa-427779120/" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/null/linkedin.png"/></a>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../public/javascripts/home.js"></script>
 </body>
 </html>
