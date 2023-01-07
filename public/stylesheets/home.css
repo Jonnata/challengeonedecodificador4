@@ -1,5 +1,215 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 *{
     box-sizing: border-box;
+}
+
+body{
+    background: #F3F5FC;
+    padding: 4px;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+figure{
+    margin: 24px 0 0;
+}
+
+textarea{
+    font-size: 30px;
+    width: 100%;
+    height: 66%;
+    padding: 17px;
+    margin: 11px;
+    resize: none;
+
+    min-height: 250px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1rem;
+    z-index: 10;
+    color: black;
+}
+
+.blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(
+      180deg,
+      rgba(47, 184, 255,0.42) 31.77%,
+      #5c9df1 100%
+    );
+    mix-blend-mode: color-dodge;
+    -webkit-animation: move 25s infinite alternate;
+            animation: move 25s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+  }
+  
+  .blob:hover {
+    width: 520px;
+    height: 520px;
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
+    box-shadow:
+      inset 0 0 0 5px rgba(255,255,255, 0.6),
+      inset 100px 100px 0 0px #fa709a,
+      inset 200px 200px 0 0px #784ba8,
+      inset 300px 300px 0 0px #2b86c5;
+  }
+  
+  @-webkit-keyframes move {
+    from {
+      transform: translate(-100px, -50px) rotate(-90deg);
+      border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+  
+    to {
+      transform: translate(500px, 100px) rotate(-10deg);
+      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+  }
+  
+  @keyframes move {
+    from {
+      transform: translate(-100px, -50px) rotate(-90deg);
+      border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+  
+    to {
+      transform: translate(500px, 100px) rotate(-10deg);
+      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+  }
+
+.form_sent{
+    text-align-last: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#result{
+    position: relative;
+    font-size: 31px;
+    font-family: 'Inter';
+    width: 424px;
+    height: 80vh;
+    display: inline-table;
+    padding: 45px;
+
+    min-height: 250px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1rem;
+    z-index: 10;
+    color: black;
+}
+
+.form_btns{
+    padding: 17px;
+}
+
+.btn-dark-submit{
+    padding: 24px;
+    margin: 6px;
+    background: #0A3871;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btn-light-submit{
+    padding: 24px;
+    margin: 6px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    cursor: pointer;
+}
+
+.main_text{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+.sub_text{
+    width: 336px;
+    height: 48px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+/*DARK MODE*/
+
+:root {
+    --bg-color: #cfd8dc;
+    --text-color: #212121;
+}
+
+[data-theme="dark"] {
+    --bg-color: #263238;
+    --text-color: #e0e0e0;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.container {
+    display: inline-grid;
+    justify-items: center;
+    padding: 9px;
+}
+.toggle-button {
+    appearance: none;
+    outline: none;
+    width: 153px;
+    height: 48px;
+    background-color: #212121;
+    border-radius: 50px;
+    position: relative;
+    transition: .4s;
+}
+
+.toggle-button:before{
+    content: "";
+    position: absolute;
+    height: 48px;
+    width: 82px;
+    border-radius: 50px;
+    top: 0;
+    bottom: 0;
+    background-color: #bdbdbd;
+    transition: .4s;
+}
+
+.toggle-button:checked {
+  background-color: #bdbdbd;
+}
+
+.toggle-button:checked:before {
+  transform: translate(100%);
+  background-color: #212121;
+  transition: .4s;
 }
