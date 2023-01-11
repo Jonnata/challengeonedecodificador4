@@ -73,11 +73,11 @@ function checkTextParameters(text){
 ```
 ## Author
 
-<img src="public/images/jonnataPhoto.png" width="100px;" alt="Jonnata Costa"/>
+<img src="public/images/jonnataPhoto.PNG" width="100px;" alt="Jonnata Costa">
 
 [![Linkedin Badge](https://img.shields.io/badge/-Jonnata-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jonnata-costa-427779120/)](https://www.linkedin.com/in/jonnata-costa-427779120/)
 
-![Email hotmail](https://img.shields.io/badge/-jonnatacosta%hotmail.com-red?style=flat-square&logo=Hotmail&logoColor=white&link=https://www.linkedin.com/in/jonnata-costa-427779120/)
+[![Hotmail Badge](https://img.shields.io/badge/-jonnatacosta%hotmail.com-red?style=flat-square&logo=Hotmail&logoColor=white&link=https://www.linkedin.com/in/jonnata-costa-427779120/)](https://www.linkedin.com/in/jonnata-costa-427779120/)
 
 - [@Jonnata](https://github.com/Jonnata)
 
