@@ -30,10 +30,26 @@ Requirements:
 - It must be possible to convert a word to the encrypted version and also return an encrypted word to the original version.
 
 For example:
-#### "cat" => "gaitober"
-#### gaitober" => "cat"
+#### "gato" => "gaitober"
+#### gaitober" => "gato"
 
 - The page has fields for entering the text to be encrypted or decrypted, and the user can choose between the two options
 - The result is displayed on the screen.
+
+
+## Functionalities
+
+- Dark and light themes
+- Encrypt text `button`
+- Decrypt text `button`
+- Copy `button`
+- Clear `button`
+
+## Screenshots
+
+### Light Themes
+
+<img src="public/images/light.PNG" alt="light theme" width="100%">
+
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
