@@ -56,4 +56,31 @@ For example:
 <img src="public/images/dark.PNG" alt="dark theme" width="100%">
 
 
+## What I Learned
+
+Blocking decoding with Uppercase words and with a direct accent in the input: onkeyup="this.value = this.value.toLowerCase();" causes decryption not to work. I learned to solve this problem by creating a function using Regex.:
+
+```javascript
+function checkTextParameters(text){
+    if(text === text.toLowerCase()){
+        const textChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+        return !(textChars.test(text))
+    }
+    else{
+        return false;
+    }
+}
+```
+## Author
+
+<img src="public/images/jonnataPhoto.png" width="100px;" alt="Jonnata Costa"/>
+
+[![Linkedin Badge](https://img.shields.io/badge/-Jonnata-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jonnata-costa-427779120/)](https://www.linkedin.com/in/jonnata-costa-427779120/)
+
+![Email hotmail](https://img.shields.io/badge/-jonnatacosta%hotmail.com-red?style=flat-square&logo=Hotmail&logoColor=white&link=https://www.linkedin.com/in/jonnata-costa-427779120/)
+
+- [@Jonnata](https://github.com/Jonnata)
+
+Made with ❤️ by <a href="https://github.com/Jonnata" target="_blank">Jonnata Costa</a> 👋🏽 Get in touch!
+
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
