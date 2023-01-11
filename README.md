@@ -47,9 +47,13 @@ For example:
 
 ## Screenshots
 
-### Light Themes
+### Light Mode
 
 <img src="public/images/light.PNG" alt="light theme" width="100%">
+
+### Dark Mode
+
+<img src="public/images/dark.PNG" alt="dark theme" width="100%">
 
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
